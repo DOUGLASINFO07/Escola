@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPanePrincipal" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="escolaLogin.FXMLDocumentLoginController">
+    <children>
+        <AnchorPane fx:id="anchorPane1" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane fx:id="anchorPane2" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane fx:id="anchorPane3" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane fx:id="anchorPane4" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="anchorPaneLogin" layoutX="621.0" layoutY="93.0" prefHeight="514.0" prefWidth="291.0" style="-fx-background-color: #fff; -fx-background-radius: 35px;" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="90.0">
+         <effect>
+            <DropShadow color="#00000085" />
+         </effect>
+         <children>
+            <Group layoutX="38.0" layoutY="64.0" AnchorPane.bottomAnchor="63.0" AnchorPane.topAnchor="64.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="73.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #c2c2c2; -fx-border-radius: 50px; -fx-background-radius: 50px; -fx-background-color: #00BA68;" text="V">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="80.0" prefHeight="54.0" prefWidth="205.0" style="-fx-background-color: #00A1FF; -fx-background-radius: 20px;" text="Olá!! Faça o login e comece a usar o aplicativo!!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="textFieldNomeUsuarioLogin" focusColor="#425ba600" labelFloat="true" layoutX="22.0" layoutY="153.0" prefHeight="35.0" prefWidth="161.0" promptText="Nome de Usuário" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+                     <padding>
+                        <Insets left="10.0" top="6.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXTextField fx:id="textFieldSenhaLogin" focusColor="#425ba600" labelFloat="true" layoutX="23.0" layoutY="214.0" prefHeight="35.0" prefWidth="161.0" promptText="Senha de acesso" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+                     <padding>
+                        <Insets left="10.0" top="6.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Button layoutX="25.0" layoutY="285.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #00A1FF; -fx-background-radius: 50px;" text="Logar" textFill="#fcfcfc">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="342.0" mnemonicParsing="false" onAction="#mostrarPaginaCadastro" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #00BA68; -fx-background-radius: 50px;" text="Inscrever" textFill="#fcfcfc">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneCadastro" layoutX="429.0" layoutY="100.0" prefHeight="514.0" prefWidth="291.0" style="-fx-background-color: #fff; -fx-background-radius: 35px;" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="90.0">
+         <effect>
+            <DropShadow color="#00000085" />
+         </effect>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="14.0" prefHeight="35.0" prefWidth="205.0" style="-fx-background-color: #00A1FF; -fx-background-radius: 20px;" text="Crie uma nova conta" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="textFieldNomeCompleto" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="65.0" prefHeight="35.0" prefWidth="161.0" promptText="Nome completo" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldNomeUsuario" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="118.0" prefHeight="35.0" prefWidth="161.0" promptText="Nome de usuário" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldSenha" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="172.0" prefHeight="35.0" prefWidth="161.0" promptText="Senha" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldConfirmaSenha" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="225.0" prefHeight="35.0" prefWidth="161.0" promptText="Confirmar senha" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldEmail" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="279.0" prefHeight="35.0" prefWidth="161.0" promptText="E-mail" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldNumeroTelefone" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="331.0" prefHeight="35.0" prefWidth="161.0" promptText="Número Telefone" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="textFieldDisciplina" focusColor="#425ba600" labelFloat="true" layoutX="65.0" layoutY="381.0" prefHeight="35.0" prefWidth="161.0" promptText="Disciplina" style="-fx-border-color: #00A1FF; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </JFXTextField>
+            <Button fx:id="buttonCadastrar" layoutX="65.0" layoutY="431.0" mnemonicParsing="false" onAction="#cadastrarProfessor" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #00BA68; -fx-background-radius: 50px;" text="Cadastrar" textFill="#fcfcfc">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonVoltarLogin" layoutX="65.0" layoutY="471.0" mnemonicParsing="false" onAction="#mostrarPaginaLogin" prefHeight="1.0" prefWidth="161.0" style="-fx-background-color: #fff;" text="voltar " textFill="#3e93e8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
